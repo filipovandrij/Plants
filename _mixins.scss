@@ -1,0 +1,19 @@
+@mixin flexBoxsStandart() {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin mainStyleButton(){
+    @include flexBoxsStandart();
+    border: 0px solid #fff;
+    border-radius: 5px;
+    background-color: $styleColorBG;
+    min-height: 50px;
+    color: #fff;
+    font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 24px;
+padding: 13px 34.5px;
+}
