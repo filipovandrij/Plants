@@ -12,6 +12,109 @@ body {
 }
 
 @media (max-width: 540px) {
+  header .header_desktop {
+    display: none;
+  }
+  header .header_text {
+    background: linear-gradient(39.89deg, rgba(0, 115, 12, 0.81) -22.86%, rgba(251, 246, 238, 0) 116.18%);
+  }
+  header .header_text .sup_title {
+    padding-top: 48px;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+  }
+  header .header_text .sup_title img {
+    padding-right: 5px;
+  }
+  header .header_text .title {
+    padding-top: 10px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 38px;
+  }
+  header .header_text .title span {
+    color: #00730C;
+  }
+  header .header_text .sub_title {
+    padding-top: 15px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  header .header_text .sub_title p {
+    text-align: justify;
+  }
+  header .header_text .header_btn {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  header .header_text .header_btn .get {
+    background-color: #00730C;
+    color: #fff;
+    width: 303px;
+    height: 44px;
+    border: none;
+    border-radius: 5px;
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  header .header_text .header_sup_btn {
+    margin-top: 20px;
+  }
+  header .header_text .header_sup_btn a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color: #00730C;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+  }
+  header .header_text .header_sup_btn a img {
+    padding-left: 12px;
+  }
+  header .header_text .live_statistic {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    padding: 40px 0 35px;
+  }
+  header .header_text .customrs {
+    z-index: 2;
+    margin: 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+    width: 133px;
+    height: 32px;
+    background: linear-gradient(180deg, #FFF8F1 0%, #CBE5CE 100%);
+    border-radius: 32px;
+  }
+  header .header_text .customrs span {
+    margin-right: 8px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  header .header_text .position_img {
+    z-index: 0;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+  }
   header .top_nav_bar {
     padding: 0 20px;
     height: 55px;
@@ -68,7 +171,10 @@ body {
     display: none;
   }
 }
-@media (min-width: 540px) {
+@media (min-width: 539px) {
+  header .header_mobile {
+    display: none;
+  }
   header .top_nav_bar {
     padding: 0 250px;
     height: 55px;
@@ -143,6 +249,7 @@ body {
     font-size: 18px;
     line-height: 24px;
     padding: 13px 34.5px;
+    font-family: "Nunito", sans-serif;
   }
   header .nav_bar_desktop .main_nav_desktop .btn_call_desktop span {
     padding-top: 3px;
