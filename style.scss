@@ -15,9 +15,15 @@ body {
 }
 header {
   // mobile first
-  @media (max-width: 540px) {
+  @media (max-width: 760px) {
     .header_desktop{
       display: none;
+    }
+    .header_picture{
+      width: 100%;
+      height: 240px;
+      background-image: url(img/mobile_header_picture.svg);
+      background-size: cover;
     }
     .header_text{
       background: linear-gradient(39.89deg, rgba(0, 115, 12, 0.81) -22.86%, rgba(251, 246, 238, 0) 116.18%);
@@ -185,7 +191,7 @@ line-height: 16px;
   // desktop header
 
   
-  @media (min-width: 539px) {
+  @media (min-width: 761px) {
 
   .header_mobile{
     display: none;
