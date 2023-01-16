@@ -213,8 +213,8 @@ body {
   [class*="card_description"] {
     box-shadow: 3px 3px 10px rgb(202, 202, 202),
       -2px -2px 10px rgb(202, 202, 202);
-    display: flex;
     border-radius: 5px;
+    display: flex;
     margin-top: 20px;
     img {
       padding: 33px 20px;
@@ -231,11 +231,6 @@ body {
       line-height: 22px;
     }
   }
-
-  // [class*="card_description"]:hover {
-  //   background-color: $styleColorBG;
-  //   color: #fff;
-  // }
 }
 
 // desktop header
@@ -346,6 +341,7 @@ body {
   // style of header content
   .header_desktop {
     position: relative;
+    z-index: 2;
     background: linear-gradient(
       79.58deg,
       rgba(0, 115, 12, 0.81) -39.14%,
@@ -368,6 +364,8 @@ body {
     }
 
     .container_info {
+      position: relative;
+      z-index: 2;
       padding: 133px 0 100px;
       max-width: 60%;
     }
@@ -453,6 +451,75 @@ body {
         font-size: 15px;
         line-height: 20px;
       }
+    }
+  }
+
+  .services_desktop {
+    .description {
+      h3 {
+        text-align: center;
+        margin-top: 50px;
+        span {
+          color: $styleColorBG;
+        }
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 38px;
+      }
+      p {
+        margin: 15px 50px 20px;
+        text-align: center;
+        @include mainStyleOfP();
+      }
+    }
+
+    .wpar_cards {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .card_description1,
+    .card_description5 {
+      margin-left: 0;
+    }
+
+    [class*="card_description"] {
+      width: 330px;
+      height: 366px;
+      box-shadow: 3px 3px 10px rgb(202, 202, 202),
+        -2px -2px 10px rgb(202, 202, 202);
+      border-radius: 5px;
+      margin-left: 29px;
+      margin-top: 30px;
+
+      img {
+        transform: scale(1.2);
+        margin: 62px 130px 55px;
+      }
+
+      h4 {
+        text-align: center;
+        color: #212529;
+
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 33px;
+      }
+
+      p {
+        color: $colorP;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        width: 243px;
+        height: 84px;
+        text-align: center;
+        margin: auto;
+      }
+    }
+    .card_description1,
+    .card_description5 {
+      margin-left: 0;
     }
   }
 }
