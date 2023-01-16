@@ -1,26 +1,33 @@
-@mixin flexBoxCenter(){
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@mixin flexBoxCenter() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@mixin flexBoxsStandart(){
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+@mixin flexBoxsStandart() {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-@mixin mainStyleButton(){
-    @include flexBoxsStandart();
-    border: 0px solid #fff;
-    border-radius: 5px;
-    background-color: $styleColorBG;
-    min-height: 50px;
-    color: #fff;
-    font-style: normal;
-font-weight: 700;
-font-size: 18px;
-line-height: 24px;
-padding: 13px 34.5px;
-font-family:  "Nunito", sans-serif;
+@mixin mainStyleButton() {
+  @include flexBoxsStandart();
+  border: 0px solid #fff;
+  border-radius: 5px;
+  background-color: $styleColorBG;
+  min-height: 50px;
+  color: #fff;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 13px 34.5px;
+  font-family: "Nunito", sans-serif;
+}
+
+@mixin mainStyleOfP() {
+  color: $colorP;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
 }
