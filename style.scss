@@ -596,4 +596,89 @@ body {
       margin-left: 0;
     }
   }
+
+  .experience_desktop {
+    position: relative;
+    display: flex;
+    margin-bottom: 100px;
+  }
+  .exp_photo {
+    height: 903px;
+    width: 693px;
+
+    position: relative;
+  }
+
+  .exp_photo_push_1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .exp_photo_push_2 {
+    position: absolute;
+    top: 36px;
+    left: 24px;
+  }
+  .exp_photo_push_3 {
+    position: absolute;
+    top: 597px;
+    left: 237px;
+  }
+  .info_with_cards {
+    margin: 44px auto auto 24px;
+    position: relative;
+    height: 814px;
+    width: 690px;
+  }
+
+  .exp_info {
+    h3 {
+      span {
+        color: $styleColorBG;
+      }
+      font-weight: 800;
+      font-size: 45px;
+      line-height: 61px;
+    }
+    p {
+      // @include mainStyleOfP();
+
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
+      color: $colorP;
+    }
+  }
+  .exp_cards {
+    min-height: 224px;
+    min-width: 690px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    div {
+      height: 97px;
+      width: 330px;
+      border-radius: 5px;
+      @include shadowOfCards();
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      h4 {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 33px;
+      }
+      img {
+        margin: 15px 30px;
+      }
+    }
+  }
+  .discover_more {
+    @include mainStyleButton();
+  }
+  .bg_plant {
+    position: absolute;
+    top: 0;
+    left: -430px;
+  }
 }
